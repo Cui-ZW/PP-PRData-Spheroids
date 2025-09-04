@@ -1,5 +1,4 @@
 clear all;
-kappa = 1; % shear rate
 Tmax=100; % max time wall
 
 filename='A0d33_2';% filename of data. You can select what you want
@@ -43,4 +42,5 @@ figure(3)
 plot(PP.T(ind0)*PP.kappa,PP.tumb(ind0)/PP.kappa,'k--',PP.T(ind0)*PP.kappa,PP.spin(ind0)/PP.kappa,'r--','LineWidth',1.5);
 hold on
 plot(PR.T(ind1)*PR.kappa,PR.tumb(ind1)/PR.kappa,'k-',PR.T(ind1)*PR.kappa,PR.spin(ind1)/PR.kappa,'r-','LineWidth',1.5);
+
 hold off
